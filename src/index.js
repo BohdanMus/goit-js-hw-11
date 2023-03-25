@@ -33,7 +33,7 @@ function onSearch(e) {
 function onBtnLoadMore() {
   const name = refs.input.value.trim();
   page += 1;
-  pixabay(name.page);
+  pixabay(name, page);
 }
 
 async function pixabay(name, page) {
